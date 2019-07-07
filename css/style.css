@@ -49,6 +49,12 @@ a:hover {
     border-radius: 0;
 }
 
+.hero-btn:hover {
+    background-color: var(--bg-dark);
+    color: var(--color-light);
+    opacity: .95; 
+}
+
 .btn-primary {
     background-color: var(--color-light);
     color: var(--bg-dark);
@@ -65,7 +71,11 @@ a:hover {
 }
 
 .btn-sm {
-    padding: .25rem .5rem !important;
+    padding: .5rem 1rem !important;
+}
+
+.navbar {
+    min-height: 5rem;
 }
 
 .nav-btn {
@@ -123,7 +133,13 @@ a:hover {
 }
 
 @media (max-width: 575.98px) {  
-    .content {
+    .navbar, .content {
         padding: 0 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 3rem;
     }
 }
